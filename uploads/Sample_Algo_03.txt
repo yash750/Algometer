@@ -1,0 +1,9 @@
+Title: Find the Maximum Number in an Array
+
+Start: Begin the process.
+Initialize Minimum: Set the first number as the temporary minimum.
+Process Each Number: Look at each number in the array one by one.
+Compare Numbers: If the current number is less than the current minimum, update the minimum.
+Continue Until End: Continue this comparison until all numbers have been checked.
+Finish: The minimum variable holds the highest number in the array.
+End: The process is complete.

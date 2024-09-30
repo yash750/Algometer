@@ -1,0 +1,9 @@
+Title: Calculate the Sum of an Array
+
+Start: Begin the process.
+Initialize a Variable: Create a variable to store the sum, starting with a value of 0.
+Process Each Number: Look at each number in the array one by one.
+Add Each Number: Add the current number to the sum.
+Update the Sum: Continue adding until all numbers have been processed.
+Finish: Once done, the sum contains the total of all numbers in the array.
+End: The process is complete.

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithm Evaluation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 26px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .status-success {
+            font-weight: bold;
+            color: #2ecc71;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .status-error {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .feedback {
+            background-color: #f0f0f0;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Algorithm Evaluation Result</h1>
+
+        {% if result.error %}
+            <p class="status-error">Error: {{ result.error }}</p>
+        {% else %}
+            {% if result.status %}
+                <p class="status-success">Fantastic! Your algorithm is correct.</p>
+            {% else %}
+                <p class="status-error">Oops! Your algorithm is not correct. Please have a look at the feedback and try again!</p>
+            {% endif %}
+            <div class="feedback">
+                <p><strong>Feedback:</strong></p>
+                <p>{{ result.feedback }}</p>
+            </div>
+        {% endif %}
+
+        <a href="{{ url_for('upload_form') }}" class="btn">Upload Another Assignment</a>
+    </div>
+</body>
+
+</html>

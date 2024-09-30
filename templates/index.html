@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Role Selection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+        }
+        .role-btn {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+        }
+        .role-btn:hover {
+            background-color: #0056b3;
+        }
+        .password-modal {
+            display: none;
+            position: fixed;
+            top: 50%; /* Adjusted to slightly higher */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            width: 600px; /* Ensuring it's well-centered */
+            text-align: center; /* Ensures content stays centered */
+            max-height: 200px;
+        }
+
+        .password-modal input {
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 16px;
+            width: 100%;
+        }
+        .password-modal button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+        .error {
+            color: red;
+            font-size: 14px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome! Please select your role:</h1>
+        <button class="role-btn" onclick="redirectTo('upload')">Student</button>
+        <button class="role-btn" onclick="showPasswordModal()">Admin</button>
+    </div>
+
+    <div class="password-modal" id="passwordModal">
+        <h2>Enter Admin Password</h2>
+        <input type="password" id="adminPassword" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p class="error" id="errorMessage">Incorrect password, please try again.</p>
+    </div>
+
+    <script>
+        // Function to show password modal
+        function showPasswordModal() {
+            document.getElementById('passwordModal').style.display = 'block';
+        }
+
+        // Redirect to student page
+        function redirectTo(role) {
+            if (role === 'upload') {
+                window.location.href = "{{ url_for('upload_form') }}";
+            }
+        }
+
+        // Function to check password
+        function checkPassword() {
+            const password = document.getElementById('adminPassword').value;
+            const correctPassword = "admin123";
+
+            if (password === correctPassword) {
+                window.location.href = "{{ url_for('admin_page') }}"; // Redirect to admin page
+            } else {
+                document.getElementById('errorMessage').style.display = 'block'; // Show error message
+            }
+        }
+    </script>
+</body>
+</html>
+

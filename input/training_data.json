@@ -1,0 +1,304 @@
+{
+  "Examples" : [ {"Input":{
+        "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Title: Count the Number of Words in a Sentence\n1. Take the input sentence. 2. Split the sentence into words by spaces. 3. Count the number of words. 4. Return the count." 
+    },
+  "Output":{
+        "status": true,
+        "feedback": "The algorithm correctly counts words by splitting based on spaces."
+    } 
+  },
+  {"Input":{
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": "Title: Find the GCD of Two Numbers\n1. Take two input numbers. 2. Use subtraction to reduce the larger number by the smaller one repeatedly. 3. Return the final number."
+  },
+  "Output":
+  {
+    "status": false,
+    "feedback": "Subtraction can work, but it's inefficient. The Euclidean algorithm using division is faster."
+  }  
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Title: Calculate the Factorial of a Number\n1. Take the input number n. 2. Initialize result = 1. 3. For each i from 1 to n, multiply result by n. 4. Return the result."
+    },
+    "Output":{
+        "status": false,
+        "feedback": "In step 3, it should multiply by 'i' instead of 'n'. This will lead to an incorrect result."
+    }
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm":""
+    },
+    "Output":{
+        "status":false,
+        "feedback":"Your input file is blank, please submit appropriate assignment file."
+    }
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Title: Find the Largest Number in a Matrix. Go through each element in the matrix row by row. Compare each element to the first element of the matrix and return the one that is greater."
+    },
+    "Output":{
+        "status": false,
+        "feedback": "The algorithm is incorrect. You need to compare each element to a variable that stores the current largest element, not just the first element."
+    }
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Title: Generate Fibonacci Sequence. You start with 0 and 1. For each subsequent number, it is the sum of the previous two. Do this n times to get the first n Fibonacci numbers."
+    },
+    "Output":{
+        "status": true,
+        "feedback": "The algorithm is correct, but more detail is needed about how you will store and return the sequence."
+    }
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Title: Convert Decimal to Binary. Take a decimal number and keep dividing by 2. Track the remainders and when the division is done, the remainders are the binary digits, but you need to reverse them to get the correct binary number."
+      },
+    "Output":{
+        "status": true,
+        "feedback": "The approach is correct but could be improved with a more structured explanation of how to track remainders and reverse the result."
+    }  
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm":"Title: Check if a String is a Palindrome. Start by taking a string. Reverse the string, and then compare it to the original. If both are the same, it’s a palindrome; otherwise, it’s not."
+    },
+    "Output":{
+        "status":true,
+        "feedback":"The algorithm is correct and concise, but consider providing more details on how the string will be reversed in code."
+    } 
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm":""
+    },
+    "Output":{
+        "status":false,
+        "feedback":"Your input file is blank, please submit appropriate assignment file."
+    }
+  },
+  {
+    "Input":{
+        "instruction":"Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm":"#98u7509u kjbnkdfvjbfdk lsknvkejf"
+    },
+    "Output":{
+        "status":false,
+        "feedback":"Content of your file is inappropriate, kindly have a look and re submit your assigment"
+    }
+  },
+  {
+    "Input": {
+        "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Once upon a time, in a faraway kingdom, there lived a dragon and a knight. The knight wanted to save the princess, but the dragon was too powerful."
+    },
+    "Output": {
+        "status": false,
+        "feedback": "This is a story, not an algorithm. Please provide a valid algorithm for evaluation."
+    }
+  },
+  {
+    "Input": {
+        "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "Algorithm: Open the fridge, take out the milk, pour it into a glass, drink the milk, and put the glass back."
+    },
+    "Output": {
+        "status": false,
+        "feedback": "This is a description of an action, not a computational algorithm. Please revise and submit an appropriate algorithm."
+    }
+  },
+  {
+    "Input": {
+        "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+        "algorithm": "The weather is sunny today. I plan to go for a walk later and enjoy the fresh air. Maybe I'll visit the park and grab a coffee."
+    },
+    "Output": {
+        "status": false,
+        "feedback": "This content is irrelevant. Please submit an algorithm, not personal thoughts or daily activities."
+    }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Roses are red, violets are blue, this is not an algorithm, and neither are you."
+  },
+  "Output": {
+      "status": false,
+      "feedback": "This is a poem, not an algorithm. Kindly submit the appropriate content for evaluation."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "I love pizza, especially with extra cheese and mushrooms. Sometimes I like to add pepperoni too!"
+  },
+  "Output": {
+      "status": false,
+      "feedback": "The content provided is unrelated to algorithmic evaluation. Please submit a valid algorithm."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Algorithm: 1. Wake up. 2. Brush teeth. 3. Eat breakfast. 4. Go to school."
+  },
+  "Output": {
+      "status": false,
+      "feedback": "This is a daily routine, not a computational algorithm. Kindly submit an appropriate algorithm."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "My favorite movie is 'Inception' because it's so mind-bending and has an amazing plot."
+  },
+  "Output": {
+      "status": false,
+      "feedback": "The content is unrelated to algorithms. Please submit a valid algorithm for evaluation."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Once, there was a beautiful butterfly that flew around the flowers all day long. It had wings that sparkled in the sunlight."
+  },
+  "Output": {
+      "status": false,
+      "feedback": "This is a fictional narrative, not an algorithm. Kindly provide an appropriate algorithm for evaluation."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": ""
+  },
+  "Output": {
+      "status": false,
+      "feedback": "No algorithm provided. Please submit a valid assignment."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Title: Find the Median of a List\n1. Take a list of numbers. 2. Sort the list. 3. Return the middle element if the list has an odd number of elements, otherwise return the average of the two middle elements."
+  },
+  "Output": {
+      "status": true,
+      "feedback": "The algorithm correctly finds the median of a list."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Title: Merge Two Sorted Lists\n1. Take two sorted lists. 2. Compare the first elements of each list. 3. Append the smaller element to a new list. 4. Repeat until both lists are empty."
+  },
+  "Output": {
+      "status": true,
+      "feedback": "The algorithm correctly merges two sorted lists."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Title: Reverse a Number\n1. Take the input number. 2. Convert it to a string. 3. Reverse the string. 4. Return the reversed string as a number."
+  },
+  "Output": {
+      "status": true,
+      "feedback": "The algorithm correctly reverses a number."
+  }
+},
+{
+  "Input": {
+      "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+      "algorithm": "Title: Find the Smallest Number in an Array\n1. Take the input array. 2. Compare each element with the next. 3. Return the smallest element."
+  },
+  "Output": {
+      "status": true,
+      "feedback": "The algorithm correctly finds the smallest element in the array."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "Blank submission. Provide an algorithm for evaluation."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "No content found. Please include an algorithm."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "Submission is empty. Provide a valid algorithm."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "Empty input detected. Please provide an algorithm."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "No algorithm provided. Please submit a valid assignment."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "Algorithm is missing. Submit a complete assignment."
+  }
+},
+{
+  "Input": {
+    "instruction": "Evaluate this algorithm and give me response in json with two values { status : True or False, feedback : other info } and keep feedback very brief and relevant, json output is must",
+    "algorithm": ""
+  },
+  "Output": {
+    "status": false,
+    "feedback": "Algorithm is missing. Submit a complete assignment."
+  }
+}
+
+]
+
+}
